@@ -36,7 +36,12 @@ p.eng {
 }
 
 #header .h-item {
-    width: 15%;
+    width: 12%;
+}
+
+#header .contact {
+    float: right;
+    width: auto;
 }
 
 #header .contact button {
@@ -49,7 +54,6 @@ p.eng {
     height: 80px;
     position: absolute;
     bottom: 0px;
-    margin: 0 -15px;
     background-color: #5a5657;
 }
 
@@ -58,4 +62,60 @@ p.eng {
     font-size: 12px;
     text-align: center;
     margin: 30px auto 10px auto;
+}
+
+#main-content {
+}
+
+.inner-content {
+    width: 960px;
+    height: auto;
+}
+
+.header1,.header2,.header3,.header4,.header5,.header6 {
+    text-align: center;
+}
+.header1 {
+    font-size: 40px;
+}
+.header2 {
+    font-size: 35px;
+}
+.header3 {
+    font-size: 30px;
+}
+.header4 {
+    font-size: 26px;
+}
+.header5 {
+    font-size: 22px;
+}
+.header6 {
+    font-size: 18px;
+}
+
+.body1 {
+    font-size: 14px;
+}
+
+.tabhost {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -moz-box-pack: center;
+}
+
+.tab {
+    background-color: #01b5f0;
+    margin: 0 10px;
+    padding: 8px 15px;
+    color: white;
+}
+
+.tabpage {
+    background-color: white;
+    border-top: 1px solid #01b5f0;
 }
