@@ -17,28 +17,27 @@ myApp.config(['$routeProvider',
             templateUrl: 'partials/home.html',
             controller: 'HomeCtrl'
         }).
-        when('/contacts', {
-            templateUrl: 'partials/contact_list.html',
-            controller: 'ContactsCtrl'
+        when('/services', {
+            templateUrl: 'partials/services.html',
+            controller: 'HomeCtrl'
         }).
-        when('/contact/new', {
-            templateUrl: 'partials/contact_edit.html',
-            controller: 'ContactEditCtrl'
+        when('/teachers', {
+            templateUrl: 'partials/teachers.html',
         }).
-        when('/contact/edit/:id', {
-            templateUrl: 'partials/contact_edit.html',
-            controller: 'ContactEditCtrl'
+        when('/cases', {
+            templateUrl: 'partials/cases.html',
         }).
-        when('/contact/:id', {
-            templateUrl: 'partials/contact_detail.html',
-            controller: 'ContactDetailCtrl'
+        when('/aboutus', {
+            templateUrl: 'partials/aboutus.html',
         }).
-        when('/activities', {
-            templateUrl: 'partials/activities.html',
-            controller: 'ActivitiesCtrl'
+        when('/whoarewe', {
+            templateUrl: 'partials/whoarewe.html',
         }).
-        when('/contact_us', {
-            templateUrl: 'partials/contact_us.html',
+        when('/joinus', {
+            templateUrl: 'partials/joinus.html',
+        }).
+        when('/product', {
+            templateUrl: 'partials/product.html',
         }).
         otherwise({
             redirectTo: '/home'
