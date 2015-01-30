@@ -1,8 +1,6 @@
 /* base css stylesheet */
 html,body {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -65,6 +63,7 @@ p.eng {
 }
 
 #main-content {
+    padding-bottom: 80px;
 }
 
 .inner-content {
@@ -98,6 +97,26 @@ p.eng {
     font-size: 14px;
 }
 
+.btn-group-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.my-btn-group {
+    width: inherit;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.my-btn-group a,
+.my-btn-group button {
+    margin: 0 30px;
+    color: #01b5f0;
+    border: 1px solid #01b5f0;
+    background-color: inherit;
+    padding: 6px 30px;
+}
+
 .tabhost {
     width: 100%;
     display: -webkit-box;
@@ -109,13 +128,71 @@ p.eng {
 }
 
 .tab {
+    min-width: 150px;
+    text-align: center;
     background-color: #01b5f0;
     margin: 0 10px;
     padding: 8px 15px;
     color: white;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: white;
+    color: #01b5f0;
+    border-top: 1px solid #01b5f0;
+    border-left: 1px solid #01b5f0;
+    border-right: 1px solid #01b5f0;
+    border-bottom: 1px solid white;
 }
 
 .tabpage {
     background-color: white;
     border-top: 1px solid #01b5f0;
+}
+
+.card-list {
+    padding: -15px;
+    overflow-y: auto;
+}
+
+.card-wrapper {
+    padding: 10px !important;
+}
+
+.card {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .card-name {
+    color: #01b5f0;
+    font-size: 18px;
+    margin: 12px 0 10px 0;
+}
+
+.card .card-sep {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.card .card-info {
+    margin: 10px 0 15px 0;
+}
+
+.card .btn {
+    background-color: #01b5f0;
+    color: white;
+    margin-top: 10px;
 }

@@ -7,15 +7,8 @@ var myControllers = angular.module('myControllers', []);
 myControllers.controller('BaseCtrl', ['$scope', '$location', '$element',
     function($scope, $location, $element) {
         $scope.resourcePath = resourcePath;
+        $scope.tabact = 1;
 
-        // set font-size
-        // var fsize = $element.outerWidth() * 0.04;
-        // $element.css('font-size', fsize);
-
-        // navigation 
-        $scope.back = function() {
-            back();
-        }
         $scope.navTo = function(path) {
             $location.path(path);
         }
