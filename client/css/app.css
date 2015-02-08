@@ -48,10 +48,7 @@ p.eng {
 }
 
 #footer {
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    bottom: 0px;
+    height: 60px;
     background-color: #5a5657;
 }
 
@@ -59,11 +56,10 @@ p.eng {
     color: #d6d4d5;
     font-size: 12px;
     text-align: center;
-    margin: 30px auto 10px auto;
+    margin: 10px auto 10px auto;
 }
 
 #main-content {
-    padding-bottom: 80px;
 }
 
 .inner-content {
@@ -204,7 +200,7 @@ p.eng {
 
 #scroller .page {
     width: 100%;
-    height: 100vh;
+    min-height: 500px;
     position: relative;
 }
 
@@ -213,9 +209,9 @@ p.eng {
     height: auto;
     position: absolute;
     bottom: 100px;
+    text-align: center;
 }
 
 .next-wrapper .next {
-    margin: 0 auto;
     width: 100px;
 }

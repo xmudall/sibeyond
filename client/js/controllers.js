@@ -15,8 +15,15 @@ myControllers.controller('BaseCtrl', ['$scope', '$location', '$element',
     }
 ]);
 
-myControllers.controller('HomeCtrl', ['$scope', '$http',
+myControllers.controller('HomeCtrl', ['$scope', '$http', 
     function($scope, $http) {
+        var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 130;
+        $scope.pageHeight = {height: height + 'px'};
+        var option = {
+            bounce: false,
+            snap: '.page',
+        };
+        var myScroll = new IScroll('#wrapper', option);
     }
 ]);
 
