@@ -91,6 +91,7 @@ p.eng {
 
 .body1 {
     font-size: 14px;
+    text-indent: 30px;
 }
 
 .btn-group-wrapper {
@@ -193,6 +194,11 @@ p.eng {
     margin-top: 10px;
 }
 
+#wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
 #scroller {
     width: 100%;
     height: auto;
@@ -202,6 +208,8 @@ p.eng {
     width: 100%;
     min-height: 500px;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .page .next-wrapper {

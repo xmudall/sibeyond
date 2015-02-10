@@ -23,7 +23,15 @@ myControllers.controller('HomeCtrl', ['$scope', '$http',
             bounce: false,
             snap: '.page',
         };
-        var myScroll = new IScroll('#wrapper', option);
+        $scope.myScroll = new IScroll('#wrapper', option);
+        $scope.$watch('pageHeight', function(ov, nv){
+            setTimeout(function(){
+                $scope.myScroll.refresh();
+            }, 200);
+        });
+        $scope.nextPage = function() {
+            $scope.myScroll.next();
+        }
     }
 ]);
 
